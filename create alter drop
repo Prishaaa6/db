@@ -1,0 +1,23 @@
+CREATE TABLE Students (
+    student_id INT ,
+    first_name VARCHAR(50) ,
+    last_name VARCHAR(50) ,
+    email VARCHAR(100)
+);
+
+
+CREATE TABLE Courses (
+    course_id INT ,
+    course_name VARCHAR(100) ,
+    instructor VARCHAR(100)
+);
+
+
+ALTER TABLE Students
+ADD gender VARCHAR(10);
+
+ALTER TABLE Students
+RENAME COLUMN gender TO student_gender;
+
+DROP TABLE Courses;
+DROP DATABASE OnlineCourseDB;
